@@ -1,0 +1,19 @@
+body{
+	background-color:#5c6068;
+}
+.noteDesign{
+	padding:40px;
+	max-width:200px;
+	border: 1px solid black;
+	background-color:yellow;
+}
+.addNote{
+	padding:20px;
+	border: 1px solid black;
+}
+.board{
+	padding-top:20px;
+}
+.noteContent{
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
