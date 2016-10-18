@@ -74,14 +74,14 @@ var Board = React.createClass({
 	},
 	getInitialState: function() {
 		return {
-			notes: [
-					'Call Amit',
-					'Email Anita',
-					'Meet Ram',
-					'Call up mom',
-					'Learn Zumba'
-						]
+			notes: []
 		};
+	},
+	addNote: function() {
+		var arr = this.state.notes;
+		var text = "new note";
+		arr.push(text);
+		this.setState({notes: arr});
 	},
 	update: function(noteText, i) {
 		var arr = this.state.notes;
@@ -105,6 +105,7 @@ var Board = React.createClass({
 	render: function() {
 		return (
 				<div className="board container-fluid">
+				<button className="btn btn-sm glyphicon glyphicon-plus addBtn" onClick={this.addNote} />
 				{this.state.notes.map(this.eachNote)}
 				</div>
 		);
