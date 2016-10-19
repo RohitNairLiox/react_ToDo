@@ -44,7 +44,7 @@ var Note = React.createClass({
         <div className="noteDesign container-fluid panel">
 			<div className="panel-body">
           <textarea ref="noteText" className="form-control" defaultValue={this.props.children}></textarea>
-		  <span className="pull-right">
+		  <span className="pull-left">
 			<button type="button" className="btn btn-success glyphicon glyphicon-floppy-disk" onClick={this.saveNote} />
 		  </span>
         </div>
@@ -79,7 +79,7 @@ var Board = React.createClass({
 	},
 	addNote: function() {
 		var arr = this.state.notes;
-		var text = "new note";
+		var text = "New Note";
 		arr.push(text);
 		this.setState({notes: arr});
 	},
@@ -105,7 +105,7 @@ var Board = React.createClass({
 	render: function() {
 		return (
 				<div className="board container-fluid">
-				<button className="btn btn-sm glyphicon glyphicon-plus addBtn" onClick={this.addNote} />
+				<button className="btn btn-sm btn-success glyphicon glyphicon-plus addBtn" onClick={this.addNote} />
 				{this.state.notes.map(this.eachNote)}
 				</div>
 		);
