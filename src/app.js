@@ -105,7 +105,15 @@ var Board = React.createClass({
 	render: function() {
 		return (
 				<div className="board container-fluid">
-				<button className="btn btn-sm btn-success glyphicon glyphicon-plus addBtn" onClick={this.addNote} />
+				<nav className="navbar navbar-fixed-top navBar">
+				  <div className="container-fluid">
+					<div className="navbar-header">
+					  <button className="btn btn-success glyphicon glyphicon-plus addBtn" onClick={this.addNote} /><br />
+					  <span className="label label-default"> Click Here to Add New Notes </span>
+					</div>
+				  </div>
+				</nav>
+				
 				{this.state.notes.map(this.eachNote)}
 				</div>
 		);

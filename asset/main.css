@@ -1,5 +1,6 @@
 body{
 	background-color:#5c6068;
+	position:relative;
 }
 .noteDesign{
 	padding:40px;
@@ -18,5 +19,9 @@ body{
 	font-family:"Comic Sans MS", cursive, sans-serif;
 }
 .addBtn{
-	position: absolute;
+	position:relative !important; display:block !important; float: left !important; 
 }
+.navBar{
+	padding:20px !important;
+}
+
