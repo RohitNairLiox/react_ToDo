@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/mxstbr/react-boilerplate-brand/master/assets/banner-metal.jpg" alt="react boilerplate banner" align="center" />
+<img src="http://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png" alt="react boilerplate banner" align="center" />
 
 <br />
 
